@@ -16,7 +16,10 @@ export default function ChatBox() {
     setLoading(true);
 
     try {
-      const res = await fetch("/api/chat", {
+      const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "https://smart-phone-recommender.onrender.com";
+
+      const res = await fetch(`${API_BASE_URL}/api/chat`, {
+
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message: input }),
