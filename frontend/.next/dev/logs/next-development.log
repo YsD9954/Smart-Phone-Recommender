@@ -1,0 +1,61 @@
+[00:00:03.573] Server  LOG      ✓ Ready in 2.3s
+[00:00:30.385] Server  LOG      ○ Compiling / ...
+[00:00:33.792] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:48.339] Server  ERROR   (node:14196) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[00:13:25.985] Server  LOG      ✓ Compiled in 1065ms
+[00:14:12.545] Server  LOG      ✓ Compiled in 65ms
+[00:30:28.805] Server  LOG      ✓ Compiled in 1123ms
+[00:30:32.103] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:30:34.326] Server  LOG      ✓ Compiled in 317ms
+[00:33:07.728] Server  LOG      ✓ Compiled in 146ms
+[00:33:09.884] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:33:15.874] Server  LOG      ✓ Compiled in 248ms
+[00:34:35.552] Server  LOG      ✓ Compiled in 427ms
+[00:34:38.618] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:34:43.791] Server  LOG      ✓ Compiled in 379ms
+[00:57:24.899] Server  LOG      ✓ Compiled in 769ms
+[00:57:25.100] Browser ERROR   ./app/page.tsx:284:13
+Parsing ecmascript source code failed
+  282 |     {
+  283 |       sender: "bot",
+> 284 |       text: "🤖   💡 Your Smart Assistant for Phone Recommendations — Ask, Compare, and Discover the Best Phones Instantly!
+      |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  285 | ,
+  286 |     },
+  287 |   ]);
+
+Unterminated string constant
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:57:29.441] Browser ERROR   ./app/page.tsx:284:13
+Parsing ecmascript source code failed
+  282 |     {
+  283 |       sender: "bot",
+> 284 |       text: "🤖   💡 Your Smart Assistant for Phone Recommendations — Ask, Compare, and Discover the Best Phones Instantly!,
+      |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  285 |     },
+  286 |   ]);
+  287 |   const [loading, setLoading] = useState(false);
+
+Unterminated string constant
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:57:31.678] Server  LOG      ✓ Compiled in 82ms
+[00:57:38.940] Server  LOG      ✓ Compiled in 38ms
+[00:58:01.849] Server  LOG      ✓ Compiled in 41ms
+[00:58:04.394] Server  LOG      ✓ Compiled in 40ms

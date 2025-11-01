@@ -1,0 +1,56 @@
+[
+  { "name": "iPhone 15 Pro", "brand": "Apple", "price": 134900, "camera": "48MP triple", "battery": "3274mAh, 20W", "display": "6.1-inch OLED, 120Hz", "processor": "A17 Pro", "storage": "256GB" },
+  { "name": "iPhone 15", "brand": "Apple", "price": 79999, "camera": "48MP dual", "battery": "3349mAh, 20W", "display": "6.1-inch OLED, 60Hz", "processor": "A16 Bionic", "storage": "128GB" },
+  { "name": "iPhone 14", "brand": "Apple", "price": 69999, "camera": "12MP dual", "battery": "3279mAh, 20W", "display": "6.1-inch OLED", "processor": "A15 Bionic", "storage": "128GB" },
+  { "name": "iPhone SE 3", "brand": "Apple", "price": 43999, "camera": "12MP single", "battery": "2018mAh, 20W", "display": "4.7-inch LCD", "processor": "A15 Bionic", "storage": "128GB" },
+
+  { "name": "Samsung Galaxy S24 Ultra", "brand": "Samsung", "price": 129999, "camera": "200MP quad", "battery": "5000mAh, 45W", "display": "6.8-inch AMOLED, 120Hz", "processor": "Snapdragon 8 Gen 3", "storage": "512GB" },
+  { "name": "Samsung Galaxy S23 Ultra", "brand": "Samsung", "price": 109999, "camera": "200MP quad", "battery": "5000mAh, 45W", "display": "6.8-inch AMOLED, 120Hz", "processor": "Snapdragon 8 Gen 2", "storage": "256GB" },
+  { "name": "Samsung Galaxy A55", "brand": "Samsung", "price": 36999, "camera": "50MP triple", "battery": "5000mAh, 25W", "display": "6.6-inch AMOLED, 120Hz", "processor": "Exynos 1480", "storage": "256GB" },
+  { "name": "Samsung Galaxy A35", "brand": "Samsung", "price": 28999, "camera": "50MP triple", "battery": "5000mAh, 25W", "display": "6.6-inch AMOLED, 120Hz", "processor": "Exynos 1380", "storage": "128GB" },
+  { "name": "Samsung Galaxy M14 5G", "brand": "Samsung", "price": 13999, "camera": "50MP triple", "battery": "6000mAh, 25W", "display": "6.6-inch LCD, 90Hz", "processor": "Exynos 1330", "storage": "128GB" },
+  { "name": "Samsung Galaxy F54", "brand": "Samsung", "price": 24999, "camera": "108MP triple", "battery": "6000mAh, 25W", "display": "6.7-inch AMOLED, 120Hz", "processor": "Exynos 1380", "storage": "256GB" },
+  { "name": "Samsung Galaxy M04", "brand": "Samsung", "price": 8499, "camera": "13MP dual", "battery": "5000mAh, 15W", "display": "6.5-inch LCD, 60Hz", "processor": "Helio P35", "storage": "64GB" },
+
+  { "name": "OnePlus 12", "brand": "OnePlus", "price": 69999, "camera": "50MP triple", "battery": "5400mAh, 100W", "display": "6.82-inch AMOLED, 120Hz", "processor": "Snapdragon 8 Gen 3", "storage": "512GB" },
+  { "name": "OnePlus 12R", "brand": "OnePlus", "price": 39999, "camera": "50MP triple", "battery": "5500mAh, 100W", "display": "6.7-inch AMOLED, 120Hz", "processor": "Snapdragon 8 Gen 2", "storage": "256GB" },
+  { "name": "OnePlus Nord 3", "brand": "OnePlus", "price": 32999, "camera": "50MP IMX890", "battery": "5000mAh, 80W", "display": "6.74-inch AMOLED, 120Hz", "processor": "Dimensity 9000", "storage": "256GB" },
+  { "name": "OnePlus Nord CE 3 Lite", "brand": "OnePlus", "price": 19999, "camera": "108MP triple", "battery": "5000mAh, 67W", "display": "6.72-inch LCD, 120Hz", "processor": "Snapdragon 695", "storage": "128GB" },
+
+  { "name": "Realme 12 Pro+", "brand": "Realme", "price": 31999, "camera": "64MP periscope", "battery": "5000mAh, 67W", "display": "6.7-inch AMOLED, 120Hz", "processor": "Snapdragon 7s Gen 2", "storage": "256GB" },
+  { "name": "Realme Narzo 70 5G", "brand": "Realme", "price": 15999, "camera": "64MP dual", "battery": "5000mAh, 45W", "display": "6.6-inch AMOLED, 120Hz", "processor": "Dimensity 6100+", "storage": "128GB" },
+  { "name": "Realme 11 Pro+", "brand": "Realme", "price": 27999, "camera": "200MP", "battery": "5000mAh, 100W", "display": "6.7-inch AMOLED, 120Hz", "processor": "Dimensity 7050", "storage": "256GB" },
+  { "name": "Realme C67", "brand": "Realme", "price": 12999, "camera": "108MP dual", "battery": "5000mAh, 33W", "display": "6.7-inch LCD, 90Hz", "processor": "Snapdragon 685", "storage": "128GB" },
+
+  { "name": "Redmi Note 13 Pro+", "brand": "Xiaomi", "price": 27999, "camera": "200MP triple", "battery": "5000mAh, 120W", "display": "6.67-inch AMOLED, 120Hz", "processor": "Dimensity 7200 Ultra", "storage": "256GB" },
+  { "name": "Redmi Note 13 5G", "brand": "Xiaomi", "price": 17999, "camera": "50MP dual", "battery": "5000mAh, 33W", "display": "6.6-inch AMOLED, 120Hz", "processor": "Dimensity 6100+", "storage": "128GB" },
+  { "name": "Redmi 13C", "brand": "Xiaomi", "price": 8999, "camera": "50MP dual", "battery": "5000mAh, 18W", "display": "6.7-inch LCD, 90Hz", "processor": "Helio G85", "storage": "64GB" },
+  { "name": "Xiaomi 14", "brand": "Xiaomi", "price": 69999, "camera": "50MP Leica triple", "battery": "4610mAh, 90W", "display": "6.36-inch AMOLED, 120Hz", "processor": "Snapdragon 8 Gen 3", "storage": "512GB" },
+
+  { "name": "Vivo X100 Pro", "brand": "Vivo", "price": 89999, "camera": "50MP Zeiss triple", "battery": "5400mAh, 120W", "display": "6.78-inch AMOLED, 120Hz", "processor": "Dimensity 9300", "storage": "512GB" },
+  { "name": "Vivo V30", "brand": "Vivo", "price": 33999, "camera": "50MP triple", "battery": "5000mAh, 80W", "display": "6.78-inch AMOLED, 120Hz", "processor": "Snapdragon 7 Gen 3", "storage": "256GB" },
+  { "name": "Vivo Y200e", "brand": "Vivo", "price": 19999, "camera": "64MP dual", "battery": "5000mAh, 44W", "display": "6.67-inch AMOLED, 120Hz", "processor": "Snapdragon 4 Gen 2", "storage": "128GB" },
+
+  { "name": "iQOO Neo 9 Pro", "brand": "iQOO", "price": 35999, "camera": "50MP Sony IMX920", "battery": "5160mAh, 120W", "display": "6.78-inch AMOLED, 144Hz", "processor": "Snapdragon 8 Gen 2", "storage": "256GB" },
+  { "name": "iQOO Z9 5G", "brand": "iQOO", "price": 17999, "camera": "50MP Sony IMX882", "battery": "5000mAh, 44W", "display": "6.67-inch AMOLED, 120Hz", "processor": "Dimensity 7200", "storage": "128GB" },
+
+  { "name": "Nothing Phone 2", "brand": "Nothing", "price": 44999, "camera": "50MP dual", "battery": "4700mAh, 45W", "display": "6.7-inch OLED, 120Hz", "processor": "Snapdragon 8+ Gen 1", "storage": "256GB" },
+  { "name": "Nothing Phone 2a", "brand": "Nothing", "price": 23999, "camera": "50MP dual", "battery": "5000mAh, 45W", "display": "6.7-inch OLED, 120Hz", "processor": "Dimensity 7200 Pro", "storage": "256GB" },
+
+  { "name": "Motorola Edge 50 Pro", "brand": "Motorola", "price": 31999, "camera": "50MP triple", "battery": "4500mAh, 125W", "display": "6.7-inch pOLED, 144Hz", "processor": "Snapdragon 7 Gen 3", "storage": "256GB" },
+  { "name": "Motorola G84 5G", "brand": "Motorola", "price": 19999, "camera": "50MP OIS", "battery": "5000mAh, 33W", "display": "6.5-inch pOLED, 120Hz", "processor": "Snapdragon 695", "storage": "128GB" },
+
+  { "name": "Infinix GT 20 Pro", "brand": "Infinix", "price": 24999, "camera": "108MP triple", "battery": "5000mAh, 45W", "display": "6.78-inch AMOLED, 120Hz", "processor": "Dimensity 8200", "storage": "256GB" },
+  { "name": "Infinix Zero 30 5G", "brand": "Infinix", "price": 17999, "camera": "108MP OIS", "battery": "5000mAh, 68W", "display": "6.78-inch AMOLED, 144Hz", "processor": "Dimensity 8020", "storage": "256GB" },
+
+  { "name": "Tecno Camon 30 Pro 5G", "brand": "Tecno", "price": 23999, "camera": "108MP triple", "battery": "5000mAh, 70W", "display": "6.78-inch AMOLED, 120Hz", "processor": "Dimensity 8200", "storage": "256GB" },
+  { "name": "Lava Agni 2 5G", "brand": "Lava", "price": 19999, "camera": "50MP quad", "battery": "4700mAh, 66W", "display": "6.78-inch AMOLED, 120Hz", "processor": "Dimensity 7050", "storage": "256GB" },
+  { "name": "POCO M6 Pro 5G", "brand": "POCO", "price": 12999, "camera": "50MP dual", "battery": "5000mAh, 18W", "display": "6.79-inch LCD, 90Hz", "processor": "Snapdragon 4 Gen 2", "storage": "128GB" },
+  { "name": "POCO X6 Pro", "brand": "POCO", "price": 26999, "camera": "64MP triple", "battery": "5000mAh, 67W", "display": "6.67-inch AMOLED, 120Hz", "processor": "Dimensity 8300 Ultra", "storage": "256GB" },
+  { "name": "Oppo Reno 11 Pro", "brand": "Oppo", "price": 39999, "camera": "50MP triple", "battery": "4600mAh, 80W", "display": "6.7-inch AMOLED, 120Hz", "processor": "Dimensity 8200", "storage": "256GB" },
+  { "name": "Oppo F25 Pro", "brand": "Oppo", "price": 23999, "camera": "64MP triple", "battery": "5000mAh, 67W", "display": "6.7-inch AMOLED, 120Hz", "processor": "Dimensity 7050", "storage": "256GB" },
+  { "name": "Google Pixel 8", "brand": "Google", "price": 75999, "camera": "50MP dual", "battery": "4575mAh, 27W", "display": "6.2-inch OLED, 120Hz", "processor": "Tensor G3", "storage": "128GB" },
+  { "name": "Google Pixel 8a", "brand": "Google", "price": 52999, "camera": "64MP dual", "battery": "4492mAh, 18W", "display": "6.1-inch OLED, 120Hz", "processor": "Tensor G3", "storage": "128GB" },
+  { "name": "Google Pixel 8a","brand": "Google","price": 52999,"camera": "64MP + 13MP ultrawide","battery": "4492mAh, 18W","display": "6.1-inch OLED, 120Hz","processor": "Tensor G3","storage": "128GB"},
+  { "name": "OnePlus 12R","brand": "OnePlus","price": 39999,"camera": "50MP Sony IMX890","battery": "5500mAh, 100W SuperVOOC","display": "6.7-inch AMOLED, 120Hz","processor": "Snapdragon 8 Gen 2","storage": "256GB"}
+]
