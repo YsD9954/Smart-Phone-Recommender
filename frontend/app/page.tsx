@@ -1,6 +1,3 @@
-
-
-
 "use client";
 
 import { useState, useRef, useEffect } from "react";
@@ -53,8 +50,13 @@ export default function Home() {
     setInput("");
     setLoading(true);
 
+    // ✅ Use Render backend URL
+    const API_BASE_URL =
+      process.env.NEXT_PUBLIC_API_URL?.trim() ||
+      "https://smart-phone-recommender.onrender.com";
+
     try {
-      const res = await fetch("/api/chat", {
+      const res = await fetch(`${API_BASE_URL}/api/chat`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message: userMsg.text }),
