@@ -2,9 +2,10 @@
 
 import { useState } from "react";
 
-// ✅ Define API URL at the top (read from Vercel env or fallback to Render backend)
+// ✅ Define API URL — Vercel will inject NEXT_PUBLIC_API_URL automatically
 const API_BASE_URL =
-  process.env.NEXT_PUBLIC_API_URL || "https://smart-phone-recommender.onrender.com";
+  process.env.NEXT_PUBLIC_API_URL?.trim() ||
+  "https://smart-phone-recommender.onrender.com";
 
 export default function ChatBox() {
   const [messages, setMessages] = useState<{ role: string; content: string }[]>([]);
@@ -20,29 +21,36 @@ export default function ChatBox() {
     setLoading(true);
 
     try {
-      const res = await fetch(`${API_BASE_URL}/api/chat`, {
+      // ✅ Always use your backend API from Render
+      const response = await fetch(`${API_BASE_URL}/api/chat`, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: {
+          "Content-Type": "application/json",
+        },
         body: JSON.stringify({ message: input }),
       });
 
-      const data = await res.json();
+      if (!response.ok) {
+        throw new Error(`Server error: ${response.status}`);
+      }
+
+      const data = await response.json();
 
       const botMessage = {
         role: "bot",
-        content: data.reply || "No response received.",
+        content: data.reply || "🤖 No response received from the assistant.",
       };
 
       setMessages((prev) => [...prev, botMessage]);
-    } catch (err) {
-      console.error("⚠️ Error contacting backend:", err);
+    } catch (error) {
+      console.error("⚠️ Backend connection error:", error);
       setMessages((prev) => [
         ...prev,
-        { role: "bot", content: "⚠️ Error contacting the server." },
+        { role: "bot", content: "⚠️ Unable to connect to the backend server. Please try again later." },
       ]);
+    } finally {
+      setLoading(false);
     }
-
-    setLoading(false);
   };
 
   return (
@@ -70,7 +78,7 @@ export default function ChatBox() {
             </span>
           </div>
         ))}
-        {loading && <p className="text-center text-gray-500">Thinking...</p>}
+        {loading && <p className="text-center text-gray-500">🤔 Thinking...</p>}
       </div>
 
       <div className="flex gap-2">
