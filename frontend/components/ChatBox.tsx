@@ -21,12 +21,9 @@ export default function ChatBox() {
     setLoading(true);
 
     try {
-      // ✅ Always use your backend API from Render
       const response = await fetch(`${API_BASE_URL}/api/chat`, {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message: input }),
       });
 
@@ -46,7 +43,10 @@ export default function ChatBox() {
       console.error("⚠️ Backend connection error:", error);
       setMessages((prev) => [
         ...prev,
-        { role: "bot", content: "⚠️ Unable to connect to the backend server. Please try again later." },
+        {
+          role: "bot",
+          content: "⚠️ Unable to connect to the backend server. Please try again later.",
+        },
       ]);
     } finally {
       setLoading(false);
