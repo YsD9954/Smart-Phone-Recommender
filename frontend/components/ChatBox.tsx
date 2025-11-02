@@ -2,6 +2,10 @@
 
 import { useState } from "react";
 
+// ✅ Define API URL at the top (read from Vercel env or fallback to Render backend)
+const API_BASE_URL =
+  process.env.NEXT_PUBLIC_API_URL || "https://smart-phone-recommender.onrender.com";
+
 export default function ChatBox() {
   const [messages, setMessages] = useState<{ role: string; content: string }[]>([]);
   const [input, setInput] = useState("");
@@ -16,10 +20,7 @@ export default function ChatBox() {
     setLoading(true);
 
     try {
-      const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "https://smart-phone-recommender.onrender.com";
-
       const res = await fetch(`${API_BASE_URL}/api/chat`, {
-
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message: input }),
@@ -34,7 +35,7 @@ export default function ChatBox() {
 
       setMessages((prev) => [...prev, botMessage]);
     } catch (err) {
-      console.error(err);
+      console.error("⚠️ Error contacting backend:", err);
       setMessages((prev) => [
         ...prev,
         { role: "bot", content: "⚠️ Error contacting the server." },
@@ -46,7 +47,9 @@ export default function ChatBox() {
 
   return (
     <div className="max-w-2xl mx-auto mt-12 p-6 bg-white shadow-xl rounded-2xl">
-      <h1 className="text-2xl font-bold mb-4 text-center">🛍️ Mobile Chat Assistant</h1>
+      <h1 className="text-2xl font-bold mb-4 text-center">
+        🛍️ Mobile Chat Assistant
+      </h1>
 
       <div className="h-80 overflow-y-auto border p-4 rounded-lg bg-gray-50 mb-4">
         {messages.map((m, i) => (
